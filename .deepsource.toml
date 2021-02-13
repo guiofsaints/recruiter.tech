@@ -2,7 +2,10 @@ version = 1
 
 exclude_patterns = [
     "public/**,",
-    "dist/**"
+    "dist/**",
+    ".next/**",
+    "node_modules/**",
+    ".vscode/**"
 ]
 
 test_patterns = [
@@ -16,7 +19,7 @@ enabled = true
 
     [analyzers.meta]
     environment = ["nodejs","browser","jest"]
-    ecma_version = 2020
     module_system = "es-modules"
     plugins = ["react"]
     style_guide = "airbnb"
+    dialect = "typescript"
