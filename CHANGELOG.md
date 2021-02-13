@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.11](https://github.com/guidroid/recruiter.tech/compare/v0.1.10...v0.1.11) (2021-02-13)
+
+
+### Bug Fixes
+
+* fix text size ([ce04c1d](https://github.com/guidroid/recruiter.tech/commit/ce04c1d7544350ef75ab985646509fcb8e1dcc0f))
+
 ### [0.1.10](https://github.com/guidroid/recruiter.tech/compare/v0.1.9...v0.1.10) (2021-02-13)
 
 

@@ -1,7 +1,7 @@
 {
   "name": "recruiter-tech",
   "description": "Diversity Recruitment Platform",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "homepage": "https://recruiter.tech/open-source",
   "license": "Apache-2.0",
   "private": true,
