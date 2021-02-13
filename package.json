@@ -16,7 +16,9 @@
     "publish": "npm run release && git push --follow-tags origin main",
     "commit": "cz",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ."
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
@@ -32,6 +34,7 @@
     "@types/react": "^17.0.1",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
+    "all-contributors-cli": "^6.19.0",
     "babel-plugin-module-resolver": "^4.1.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.19.0",
