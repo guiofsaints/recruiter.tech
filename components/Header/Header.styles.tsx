@@ -4,10 +4,17 @@ const useStyles = makeStyles((theme: Theme) => ({
   root: {
     flexGrow: 1
   },
+  logo: {},
   appBar: {
-    background:
-      "linear-gradient(90deg, #303030 0%, rgba(48,48,48,1) 60%, #202020 100%)",
-    boxShadow: "none"
+    background: "transparent",
+    boxShadow: "none",
+    maxWidth: "80%",
+    "@media (max-width:950px)": {
+      maxWidth: "100%",
+      marginBottom: -20
+    },
+    margin: `auto`,
+    marginBottom: 50
   },
   menuButton: {
     marginRight: theme.spacing(2)
@@ -15,9 +22,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   toolbar: {
     alignItems: "flex-start",
     paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(2),
-    marginTop: "10px",
-    marginLeft: "0"
+    paddingBottom: theme.spacing(2)
   },
   title: {
     flexGrow: 1,

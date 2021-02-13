@@ -4,7 +4,9 @@ import { blue } from "@material-ui/core/colors";
 const useStyles = makeStyles(() => ({
   footer: {
     textAlign: "center",
-    margin: 40
+    marginTop: 10,
+    marginBottom: 20,
+    color: "#fff"
   },
   link: {
     color: blue.A200

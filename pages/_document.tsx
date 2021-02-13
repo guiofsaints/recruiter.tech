@@ -18,7 +18,11 @@ class MyDocument extends Document {
           />
           <link rel="icon" type="image/png" href="/favicon.png" />
         </Head>
-        <body>
+        <body
+          style={{
+            backgroundImage: "url(/images/stars.svg)"
+          }}
+        >
           <Main />
           <NextScript />
         </body>

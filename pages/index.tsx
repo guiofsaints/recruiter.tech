@@ -7,9 +7,7 @@ import Footer from "../components/Footer";
 const Index = (): JSX.Element => (
   <>
     <Header />
-    <main>
-      <Banner />
-    </main>
+    <Banner />
     <Footer />
   </>
 );
