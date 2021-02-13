@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.12](https://github.com/guidroid/recruiter.tech/compare/v0.1.11...v0.1.12) (2021-02-13)
+
+
+### Features
+
+* add manifest (pwa) ([1f4c141](https://github.com/guidroid/recruiter.tech/commit/1f4c141a31b10370edfc8f17de678d345c5849b2))
+
 ### [0.1.11](https://github.com/guidroid/recruiter.tech/compare/v0.1.10...v0.1.11) (2021-02-13)
 
 
