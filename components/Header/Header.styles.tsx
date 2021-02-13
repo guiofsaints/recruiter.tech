@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       marginBottom: -20
     },
     margin: `auto`,
-    marginBottom: 50
+    marginBottom: 10
   },
   menuButton: {
     marginRight: theme.spacing(2)

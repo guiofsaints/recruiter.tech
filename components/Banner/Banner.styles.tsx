@@ -10,6 +10,9 @@ const useStyles = makeStyles(() =>
       letterSpacing: "-0.02em",
       textAlign: "center",
       fontSize: "1.5rem",
+      "@media (max-width:1100px)": {
+        fontSize: "1rem"
+      },
       "@media (max-width:950px)": {
         fontSize: "1.5rem"
       }
@@ -22,17 +25,22 @@ const useStyles = makeStyles(() =>
     titleBanner: {
       lineHeight: "1.2em",
       letterSpacing: "-0.02em",
-      fontWeight: "lighter",
       textAlign: "center",
       color: "#fff",
+      fontWeight: 400,
       fontSize: "2.3rem",
+      "@media (max-width:1100px)": {
+        fontSize: "1.5rem"
+      },
       "@media (max-width:950px)": {
         fontSize: "1.5rem"
       }
     },
     imgBanner: {
       textAlign: "center",
-      marginBottom: 60,
+      "@media (min-width:950px)": {
+        marginBottom: 60
+      },
       "@media (max-width:950px)": {
         marginTop: 0
       }
