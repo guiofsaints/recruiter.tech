@@ -1,0 +1,24 @@
+version = 1
+
+exclude_patterns = [
+    "public/**,",
+    "dist/**"
+]
+
+test_patterns = [
+  "tests/**",
+  "*.spec.js"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+    [analyzers.meta]
+    environment = ["nodejs","browser","jest"]
+    plugins = ["react"]
+    ecma_version = 2020
+    module_system = "es-modules"
+    
+    plugins = ["react"]
+    style_guide = "airbnb"

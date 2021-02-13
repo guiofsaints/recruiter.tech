@@ -1,0 +1,1 @@
+# Process for becoming a maintainer
