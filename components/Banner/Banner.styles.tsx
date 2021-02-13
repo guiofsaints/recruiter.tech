@@ -32,10 +32,9 @@ const useStyles = makeStyles(() =>
     },
     imgBanner: {
       textAlign: "center",
-      marginTop: 60,
-      marginBottom: 10,
+      marginBottom: 60,
       "@media (max-width:950px)": {
-        marginTop: 40
+        marginTop: 0
       }
     },
     button: {
