@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/guidroid/recruiter.tech/compare/v0.1.4...v0.1.5) (2021-02-13)
+
+
+### Features
+
+* **register:** add basic structure to register component ([e9a46b9](https://github.com/guidroid/recruiter.tech/commit/e9a46b9c4cb295b75dc4709fad78c17e25e5b3c3))
+
 ### [0.1.4](https://github.com/guidroid/recruiter.tech/compare/v0.1.3...v0.1.4) (2021-02-13)
 
 
