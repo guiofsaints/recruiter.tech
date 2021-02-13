@@ -12,6 +12,8 @@ Recruiter is a platform for diversity and inclusion recruitment. Created to help
 
 ![Security Headers](https://img.shields.io/security-headers?url=https%3A%2F%2Frecruiter.tech)
 
+![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade/recruiter.tech?publish)
+
 ## Stack
 
 - NodeJS
