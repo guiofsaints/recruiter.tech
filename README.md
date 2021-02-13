@@ -2,6 +2,12 @@
 
 Recruiter is a platform for diversity and inclusion recruitment. Created to help increase diversity in companies.
 
+[![DeepSource](https://deepsource.io/gh/guidroid/recruiter.tech.svg/?label=active+issues&show_trend=true&token=MjmolkEMhUv1dPAfdFGf9s3P)](https://deepsource.io/gh/guidroid/recruiter.tech/?ref=repository-badge)
+
+[![Known Vulnerabilities](https://snyk.io/test/github/guidroid/recruiter.tech/badge.svg)](https://snyk.io/test/github/guidroid/recruiter.tech)
+
+
+
 ## Stack
 
 - NodeJS
