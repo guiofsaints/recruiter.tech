@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10](https://github.com/guidroid/recruiter.tech/compare/v0.1.9...v0.1.10) (2021-02-13)
+
+
+### Features
+
+* change banner image ([adb4ff3](https://github.com/guidroid/recruiter.tech/commit/adb4ff397ed42903898fd60ba4f2d419e86c9809))
+
 ### [0.1.9](https://github.com/guidroid/recruiter.tech/compare/v0.1.8...v0.1.9) (2021-02-13)
 
 
