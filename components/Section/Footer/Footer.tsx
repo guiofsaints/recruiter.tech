@@ -10,15 +10,7 @@ const Footer = (): JSX.Element => {
   return (
     <footer>
       <Container>
-        <div className={classes.footer}>
-          recruiter | site sem fins lucrativos | {year} <br />
-          <Link
-            className={classes.link}
-            href="https://github.com/guidroid/recruiter-tech"
-          >
-            Open Source
-          </Link>
-        </div>
+        <div className={classes.footer}>Recruiter.tech | {year}</div>
       </Container>
     </footer>
   );

@@ -17,21 +17,13 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
           />
           <link rel="icon" type="image/png" href="/favicon.png" />
-
           <link rel="manifest" href="/manifest.json" />
+
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="msapplication-starturl" content="/" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />
         </Head>
-        <body
-          style={{
-            backgroundImage: "url(/images/stars.svg)"
-          }}
-        >
+        <body>
           <Main />
           <NextScript />
         </body>

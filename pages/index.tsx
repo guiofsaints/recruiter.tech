@@ -1,14 +1,14 @@
 import React from "react";
 
-import Header from "../components/Header";
-import Banner from "../components/Banner";
-import Footer from "../components/Footer";
+import Benefits from "../components/Section/Benefits";
+import Header from "../components/Section/Header";
+import Banner from "../components/Section/Banner";
 
 const Index = (): JSX.Element => (
   <>
     <Header />
     <Banner />
-    <Footer />
+    <Benefits />
   </>
 );
 

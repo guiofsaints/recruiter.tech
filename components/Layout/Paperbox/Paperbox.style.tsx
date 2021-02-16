@@ -20,10 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
       maxWidth: "80%",
       margin: `${theme.spacing(4)}px auto`,
       padding: theme.spacing(2),
-      paddingLeft: 0,
-      paddingRight: 0,
-      borderTopRightRadius: 15,
-      borderBottomLeftRadius: 15,
+      borderRadius: 15,
       "@media (max-width:950px)": {
         maxWidth: "90%"
       }

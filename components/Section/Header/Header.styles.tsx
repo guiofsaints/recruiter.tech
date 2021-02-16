@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   appBar: {
     background: "transparent",
     boxShadow: "none",
-    maxWidth: "80%",
+    maxWidth: "90%",
     "@media (max-width:950px)": {
       maxWidth: "100%",
       marginBottom: -20
@@ -30,12 +30,10 @@ const useStyles = makeStyles((theme: Theme) => ({
     margin: 0,
     padding: 0
   },
-  button: {
-    fontSize: "1.3em",
-    marginRight: "10px",
-    marginLeft: "10px",
-    textTransform: "none",
-    fontWeight: 400
+  link: {
+    color: "#fff",
+    marginRight: 30,
+    marginTop: 5
   }
 }));
 
