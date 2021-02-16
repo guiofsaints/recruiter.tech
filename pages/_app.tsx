@@ -37,10 +37,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     <>
       <Head>
         <title>Recruiter - Mais diversidade no mundo da Tecnologia.</title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, , user-scalable=no, shrink-to-fit=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
