@@ -24,7 +24,8 @@ const Benefits = (): JSX.Element => {
             flexDirection: "row",
             padding: 0,
             overflow: "auto",
-            marginTop: 10
+            marginTop: 10,
+            alignItems: "center"
           }}
         >
           <ListItem>
@@ -44,8 +45,8 @@ const Benefits = (): JSX.Element => {
           </ListItem>
         </List>
         <div className={classes.journey}>
-          <Box mt={2}>
-            <Typography variant="body1" component="p">
+          <Box mt={4}>
+            <Typography variant="h6" component="h2">
               Vamos começar sua jornada?
             </Typography>
           </Box>

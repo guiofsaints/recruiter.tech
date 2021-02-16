@@ -6,7 +6,7 @@ const useStyles = makeStyles(() =>
     card: {
       minWidth: 250,
       minHeight: 320,
-      borderRadius: 10,
+      borderRadius: 20,
       margin: 10
     },
     journey: {

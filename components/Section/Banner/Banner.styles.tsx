@@ -4,13 +4,10 @@ const useStyles = makeStyles(() =>
   createStyles({
     intro: {
       textAlign: "center",
-      marginTop: 50,
+      marginTop: 20,
       "@media (max-width:950px)": {
         padding: 20
       }
-    },
-    "$intro & p": {
-      marginTop: 20
     },
     "@keyframes rainbowAnim": {
       "0%": {

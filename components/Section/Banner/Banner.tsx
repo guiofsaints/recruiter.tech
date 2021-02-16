@@ -1,7 +1,6 @@
 import React from "react";
 
-import { Typography, Container, Box, Link } from "@material-ui/core";
-import RoundedButton from "../../Form/RoundedButton/RoundedButton";
+import { Typography, Container, Box } from "@material-ui/core";
 import useStyles from "./Banner.styles";
 
 const Banner = (): JSX.Element => {
