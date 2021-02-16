@@ -9,7 +9,7 @@ const Banner = (): JSX.Element => {
 
   return (
     <>
-      <Container>
+      <Container maxWidth="md">
         <div className={classes.intro}>
           <Typography variant="h4" component="h1">
             Em busca de mais{" "}
