@@ -1,12 +1,15 @@
 import {
+  Box,
   Card,
   CardContent,
   Container,
-  Grid,
+  Link,
   List,
-  ListItem
+  ListItem,
+  Typography
 } from "@material-ui/core";
 import React from "react";
+import RoundedButton from "../../Form/RoundedButton";
 import useStyles from "./Benefits.style";
 
 const Benefits = (): JSX.Element => {
@@ -40,6 +43,21 @@ const Benefits = (): JSX.Element => {
             </Card>
           </ListItem>
         </List>
+        <div className={classes.journey}>
+          <Box mt={2}>
+            <Typography variant="body1" component="p">
+              Vamos começar sua jornada?
+            </Typography>
+          </Box>
+          <Box mt={2} mb={4}>
+            <Link href="/signup">
+              <RoundedButton>Criar Perfil</RoundedButton>
+            </Link>
+            <Link href="/contact">
+              <RoundedButton>Encontrar Pessoas</RoundedButton>
+            </Link>
+          </Box>
+        </div>
       </Container>
     </section>
   );

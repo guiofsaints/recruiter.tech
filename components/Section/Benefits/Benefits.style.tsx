@@ -8,6 +8,10 @@ const useStyles = makeStyles(() =>
       minHeight: 320,
       borderRadius: 10,
       margin: 10
+    },
+    journey: {
+      magin: "auto",
+      textAlign: "center"
     }
   })
 );

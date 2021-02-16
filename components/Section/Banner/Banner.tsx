@@ -20,14 +20,6 @@ const Banner = (): JSX.Element => {
               Crie seu perfil ou encontre pessoas para sua empresa.
             </Typography>
           </Box>
-          <Box mt={4}>
-            <Link href="/signup">
-              <RoundedButton>Criar Perfil</RoundedButton>
-            </Link>
-            <Link href="/contact">
-              <RoundedButton>Encontrar Pessoas</RoundedButton>
-            </Link>
-          </Box>
         </div>
       </Container>
     </>
