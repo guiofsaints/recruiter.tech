@@ -12,6 +12,18 @@ class MyDocument extends Document {
       <Html lang="pt-BR">
         <Head>
           <meta name="theme-color" content={theme.palette.primary.main} />
+
+          <meta httpEquiv="content-type" content="text/html;charset=utf-8" />
+          <meta httpEquiv="content-language" content="pt-br" />
+          <meta
+            name="keywords"
+            content="Vagas, inclusão, diversidade, tecnologia, PcD"
+          />
+          <meta
+            name="description"
+            content="Aumente a diversidade na sua empresa."
+          />
+
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
@@ -23,6 +35,7 @@ class MyDocument extends Document {
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <link rel="apple-touch-icon" href="/favicon.png" />
           <meta name="msapplication-starturl" content="/" />
+          <link rel="canonical" href="http://recruiter.tech/" />
         </Head>
         <body>
           <Main />
