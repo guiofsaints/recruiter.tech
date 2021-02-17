@@ -27,7 +27,7 @@ const Benefits = (): JSX.Element => {
       ),
       title: "É Grátis",
       description:
-        "Não cobramos NADA para você utilizar a plataforma, o objetivo aqui é aumentar a diversidade nas empresas e não ganhar dinheiro."
+        "Não cobramos NADA para você utilizar a plataforma, o objetivo aqui é aumentar a diversidade nas empresas."
     },
     {
       key: 2,

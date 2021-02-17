@@ -10,7 +10,7 @@ const useStyles = makeStyles(() =>
       marginTop: 28,
       marginRight: -20,
       zIndex: 9,
-      maxHeight: 340,
+      maxHeight: 320,
       borderStyle: "solid",
       borderImage:
         "linear-gradient(90deg, rgba(48, 48, 48, 1), rgba(0, 0, 0, 0)) 1 100%"
@@ -23,7 +23,7 @@ const useStyles = makeStyles(() =>
       marginTop: 28,
       marginLeft: -20,
       zIndex: 9,
-      maxHeight: 340,
+      maxHeight: 320,
       borderStyle: "solid",
       borderImage:
         "linear-gradient(-90deg, rgba(48, 48, 48, 1), rgba(0, 0, 0, 0)) 1 100%"
@@ -55,7 +55,7 @@ const useStyles = makeStyles(() =>
     },
     card: {
       minWidth: 250,
-      minHeight: 340,
+      minHeight: 320,
       borderRadius: 20,
       margin: 10
     },
