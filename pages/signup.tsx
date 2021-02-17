@@ -2,21 +2,20 @@ import React from "react";
 
 import {
   Avatar,
+  Box,
   Button,
   Card,
   CardContent,
+  Container,
   createStyles,
-  Grid,
   makeStyles,
   Theme,
   Typography
 } from "@material-ui/core";
-import { blue, pink, yellow } from "@material-ui/core/colors";
-import MoneyOffIcon from "@material-ui/icons/MoneyOff";
-import StarIcon from "@material-ui/icons/Star";
+import { blue, pink } from "@material-ui/core/colors";
 import LinkedinIcon from "@material-ui/icons/LinkedIn";
-import EmojiPeopleIcon from "@material-ui/icons/EmojiPeople";
 
+import { VpnKey } from "@material-ui/icons";
 import GoogleIcon from "../components/Icons/GoogleIcon";
 import Header from "../components/Section/Header";
 import Footer from "../components/Section/Footer";
@@ -25,12 +24,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       flexGrow: 1,
-      padding: theme.spacing(0, 3)
-    },
-    paper: {
-      maxWidth: 600,
-      margin: `${theme.spacing(1)}px auto`,
-      padding: theme.spacing(2)
+      margin: "auto"
     },
     button: {
       borderColor: pink.A700,
@@ -61,136 +55,49 @@ const SignUp = (): JSX.Element => {
   const classes = useStyles();
   return (
     <>
-      <Header />
       {/* Register Component */}
-      <div className={classes.root}>
-        <Grid
-          container
-          spacing={2}
-          direction="row"
-          justify="center"
-          style={{ marginTop: -60 }}
-        >
-          <Grid item xl={4} sm={4} xs={12}>
-            <h1>Por que criar uma conta?</h1>
-            <Grid
-              container
-              spacing={2}
-              direction="column"
-              justify="center"
-              alignItems="stretch"
-            >
-              <Grid item xs={12} sm={12}>
-                <Card style={{ minHeight: 140, textAlign: "center" }}>
-                  <CardContent>
-                    <Avatar
-                      style={{
-                        backgroundColor: yellow[400],
-                        margin: "0 auto"
-                      }}
-                    >
-                      <MoneyOffIcon style={{ fontSize: 40 }} />
-                    </Avatar>
-                    <Typography
-                      variant="h6"
-                      component="h2"
-                      style={{ marginTop: 10 }}
-                    >
-                      <b>É Grátis</b>
-                    </Typography>
-                    <Typography variant="body2" component="p">
-                      Não cobramos <b>NADA</b> para você utilizar a plataforma,
-                      o objetivo aqui é aumentar a diversidade nas empresas e
-                      não ganhar dinheiro.
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-              <Grid item xs={12} sm={12}>
-                <Card style={{ minHeight: 140, textAlign: "center" }}>
-                  <CardContent>
-                    <Avatar
-                      style={{
-                        backgroundColor: yellow[400],
-                        margin: "0 auto"
-                      }}
-                    >
-                      <StarIcon style={{ fontSize: 40 }} />
-                    </Avatar>
-                    <Typography
-                      variant="h6"
-                      component="h2"
-                      style={{ marginTop: 10 }}
-                    >
-                      <b>Vagas e Conteúdo Exclusivo</b>
-                    </Typography>
-                    <Typography variant="body2" component="p">
-                      Receba informações de vagas, notícias e cursos sobre
-                      tecnologia. Todo conteúdo publicado será com foco na
-                      diversade e inclusão.
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-              <Grid item xs={12} sm={12}>
-                <Card style={{ minHeight: 140, textAlign: "center" }}>
-                  <CardContent>
-                    <Avatar
-                      style={{
-                        backgroundColor: yellow[400],
-                        margin: "0 auto"
-                      }}
-                    >
-                      <EmojiPeopleIcon style={{ fontSize: 40 }} />
-                    </Avatar>
-                    <Typography
-                      variant="h6"
-                      component="h2"
-                      style={{ marginTop: 10 }}
-                    >
-                      <b>Aumente seu Networking</b>
-                    </Typography>
-                    <Typography variant="body2" component="p">
-                      Estamos construíndo uma comunidade para você conhecer
-                      novas pessoas com interesse em comum.
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item xl={4} sm={4} xs={12}>
-            <Card style={{ minHeight: 140, marginTop: 78 }}>
-              <CardContent>
-                <div style={{ margin: "0 auto", textAlign: "center" }}>
-                  <img
-                    src="/images/banner-robot.png"
-                    alt="pessoas construindo um robo"
-                    width="90%"
-                  />
-                </div>
-                <Typography variant="h6" component="h2">
-                  <b>Criar conta</b>
+      <section className={classes.root}>
+        <Container maxWidth="xs">
+          <Box display="flex" mt={4} mb={2} justifyContent="center">
+            <img
+              src="/images/logo-white.png"
+              alt="recruiter.tech"
+              width={120}
+            />
+          </Box>
+          <Card style={{ minHeight: 140, textAlign: "center" }}>
+            <CardContent>
+              <Typography variant="h4" component="h1">
+                <b>Meu Perfil</b>
+              </Typography>
+              <Box display="flex" mt={4} mb={4} justifyContent="center">
+                <Avatar style={{ width: 100, height: 100 }}>
+                  <VpnKey style={{ fontSize: 70 }} />
+                </Avatar>
+              </Box>
+              <Typography variant="body2" component="p">
+                Utilize uma de suas redes para criar um perfil ou se conectar.
+              </Typography>
+              <Button className={classes.button}>
+                <GoogleIcon style={{ fontSize: 16, marginRight: 10 }} />
+                Google
+              </Button>
+              <Button
+                className={classes.button}
+                style={{ backgroundColor: blue[500], borderColor: blue[700] }}
+              >
+                <LinkedinIcon style={{ fontSize: 16, marginRight: 10 }} />
+                Linkedin
+              </Button>
+              <Box mt={1}>
+                <Typography variant="caption" component="p">
+                  Ao entrar você estará concordando com os <b>termos de uso</b>.
                 </Typography>
-                <Typography variant="body2" component="p">
-                  Utilize uma de suas redes para se conectar.
-                </Typography>
-                <Button className={classes.button}>
-                  <GoogleIcon style={{ fontSize: 16, marginRight: 10 }} />
-                  Google
-                </Button>
-                <Button
-                  className={classes.button}
-                  style={{ backgroundColor: blue[500], borderColor: blue[700] }}
-                >
-                  <LinkedinIcon style={{ fontSize: 16, marginRight: 10 }} />
-                  Linkedin
-                </Button>
-              </CardContent>
-            </Card>
-          </Grid>
-        </Grid>
-      </div>
+              </Box>
+            </CardContent>
+          </Card>
+        </Container>
+      </section>
       <Footer />
     </>
   );
