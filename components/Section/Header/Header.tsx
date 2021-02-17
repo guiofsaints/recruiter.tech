@@ -27,7 +27,7 @@ const Header = (): JSX.Element => {
                 SOBRE
               </Link>
             </Hidden>
-            <Link href="/sign">
+            <Link href="/signup">
               <RoundedButton color="default">Entrar</RoundedButton>
             </Link>
           </Toolbar>
