@@ -6,31 +6,44 @@ const useStyles = makeStyles(() =>
       position: "relative",
       float: "left",
       borderRight: 0,
-      borderLeftWidth: 40,
+      borderLeftWidth: 20,
       marginTop: 28,
-      marginRight: -40,
+      marginRight: -20,
       zIndex: 9,
       maxHeight: 340,
       borderStyle: "solid",
       borderImage:
-        "linear-gradient(90deg, rgba(100, 100, 100, 1), rgba(0, 0, 0, 0)) 1 100%"
+        "linear-gradient(90deg, rgba(48, 48, 48, 1), rgba(0, 0, 0, 0)) 1 100%"
     },
     borderRight: {
       position: "relative",
       float: "right",
-      borderRight: 0,
-      borderLeftWidth: 40,
+      borderLeft: 0,
+      borderRight: 20,
       marginTop: 28,
-      marginLeft: -40,
+      marginLeft: -20,
       zIndex: 9,
       maxHeight: 340,
       borderStyle: "solid",
       borderImage:
-        "linear-gradient(-90deg, rgba(100, 100, 100, 1), rgba(0, 0, 0, 0)) 1 100%"
+        "linear-gradient(-90deg, rgba(48, 48, 48, 1), rgba(0, 0, 0, 0)) 1 100%"
     },
     scroll: {
       display: "flex",
-      flexDirection: "row"
+      flexDirection: "row",
+      "@global": {
+        "*::-webkit-scrollbar": {
+          width: "0px",
+          height: "0px"
+        },
+        "*::-webkit-scrollbar-track": {
+          "-webkit-box-shadow": "inset 0 0 0px rgba(0,0,0,0.00)"
+        },
+        "*::-webkit-scrollbar-thumb": {
+          backgroundColor: "transparent",
+          outline: "0px solid slategrey"
+        }
+      }
     },
     list: {
       display: "flex",
@@ -48,10 +61,11 @@ const useStyles = makeStyles(() =>
     },
     cardTitle: {
       fontWeight: 700,
-      marginBottom: 20
+      marginBottom: 20,
+      textAlign: "center"
     },
     cardDescription: {
-      textAlign: "justify"
+      textAlign: "center"
     },
     journey: {
       magin: "auto",
