@@ -12,7 +12,7 @@ const Banner = (): JSX.Element => {
         <div className={classes.intro}>
           <Typography variant="h4" component="h1">
             Em busca de mais{" "}
-            <span className={classes.rainbow}>Diversidade</span> na Tencnologia
+            <span className={classes.rainbow}>Diversidade</span> na Tecnologia
           </Typography>
           <Box mt={2}>
             <Typography variant="h6" component="p">
