@@ -28,7 +28,7 @@ const Header = (): JSX.Element => {
               </Link>
             </Hidden>
             <Link href="/sign">
-              <RoundedButton>Entrar</RoundedButton>
+              <RoundedButton color="default">Entrar</RoundedButton>
             </Link>
           </Toolbar>
         </Container>

@@ -4,7 +4,7 @@ const useStyles = makeStyles(() =>
   createStyles({
     intro: {
       textAlign: "center",
-      marginTop: 20,
+      marginTop: 10,
       "@media (max-width:950px)": {
         padding: 20
       }

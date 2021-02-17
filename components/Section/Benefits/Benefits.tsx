@@ -52,7 +52,7 @@ const Benefits = (): JSX.Element => {
       ),
       title: "Aumente seu Networking",
       description:
-        "Estamos construíndo uma comunidade para você conhecer novas pessoas com interesse em comum."
+        "Estamos construíndo uma comunidade para você conhecer novas pessoas com interesses em comum."
     }
   ];
 
@@ -107,10 +107,10 @@ const Benefits = (): JSX.Element => {
           </Box>
           <Box mt={2} mb={4}>
             <Link href="/signup">
-              <RoundedButton>Criar Perfil</RoundedButton>
+              <RoundedButton size="medium">Criar Perfil</RoundedButton>
             </Link>
             <Link href="/contact">
-              <RoundedButton>Encontrar Pessoas</RoundedButton>
+              <RoundedButton size="medium">Encontrar Pessoas</RoundedButton>
             </Link>
           </Box>
         </div>

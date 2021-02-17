@@ -4,25 +4,10 @@ import { pink } from "@material-ui/core/colors";
 const useStyles = makeStyles(() =>
   createStyles({
     button: {
-      borderColor: pink[900],
-      borderRadius: 14,
-      borderWidth: "0 0 4px",
-      borderStyle: "solid",
-      backgroundColor: pink.A400,
-      color: "#fff",
-      padding: 6,
-      paddingLeft: 10,
-      paddingRight: 10,
+      borderRadius: 24,
+      fontWeight: 600,
       minWidth: 100,
-      marginLeft: 4,
-      marginRight: 4,
-      fontWeight: "bold",
-      backgroundClip: "padding-box",
-      "@media (max-width:950px)": {},
-      "&:hover": {
-        color: "#fff",
-        borderColor: "#404040"
-      }
+      margin: 4
     }
   })
 );
