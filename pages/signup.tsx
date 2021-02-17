@@ -17,7 +17,6 @@ import LinkedinIcon from "@material-ui/icons/LinkedIn";
 
 import { VpnKey } from "@material-ui/icons";
 import GoogleIcon from "../components/Icons/GoogleIcon";
-import Header from "../components/Section/Header";
 import Footer from "../components/Section/Footer";
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -57,48 +56,56 @@ const SignUp = (): JSX.Element => {
     <>
       {/* Register Component */}
       <section className={classes.root}>
-        <Container maxWidth="xs">
-          <Box display="flex" mt={4} mb={2} justifyContent="center">
-            <img
-              src="/images/logo-white.png"
-              alt="recruiter.tech"
-              width={120}
-            />
-          </Box>
-          <Card style={{ minHeight: 140, textAlign: "center" }}>
-            <CardContent>
-              <Typography variant="h4" component="h1">
-                <b>Meu Perfil</b>
-              </Typography>
-              <Box display="flex" mt={4} mb={4} justifyContent="center">
-                <Avatar style={{ width: 100, height: 100 }}>
-                  <VpnKey style={{ fontSize: 70 }} />
-                </Avatar>
-              </Box>
-              <Typography variant="body2" component="p">
-                Utilize uma de suas redes para criar um perfil ou se conectar.
-              </Typography>
-              <Button className={classes.button}>
-                <GoogleIcon style={{ fontSize: 16, marginRight: 10 }} />
-                Google
-              </Button>
-              <Button
-                className={classes.button}
-                style={{ backgroundColor: blue[500], borderColor: blue[700] }}
-              >
-                <LinkedinIcon style={{ fontSize: 16, marginRight: 10 }} />
-                Linkedin
-              </Button>
-              <Box mt={1}>
-                <Typography variant="caption" component="p">
-                  Ao entrar você estará concordando com os <b>termos de uso</b>.
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          minHeight="100vh"
+        >
+          <Container maxWidth="xs">
+            <Box display="flex" justifyContent="center" alignItems="center">
+              <img
+                src="/images/logo-white.png"
+                alt="recruiter.tech"
+                width={120}
+              />
+            </Box>
+            <Card style={{ minHeight: 140, textAlign: "center" }}>
+              <CardContent>
+                <Typography variant="h4" component="h1">
+                  <b>Meu Perfil</b>
                 </Typography>
-              </Box>
-            </CardContent>
-          </Card>
-        </Container>
+                <Box display="flex" mt={4} mb={4} justifyContent="center">
+                  <Avatar style={{ width: 100, height: 100 }}>
+                    <VpnKey style={{ fontSize: 70 }} />
+                  </Avatar>
+                </Box>
+                <Typography variant="body2" component="p">
+                  Utilize uma de suas redes para criar um perfil ou se conectar.
+                </Typography>
+                <Button className={classes.button}>
+                  <GoogleIcon style={{ fontSize: 16, marginRight: 10 }} />
+                  Google
+                </Button>
+                <Button
+                  className={classes.button}
+                  style={{ backgroundColor: blue[500], borderColor: blue[700] }}
+                >
+                  <LinkedinIcon style={{ fontSize: 16, marginRight: 10 }} />
+                  Linkedin
+                </Button>
+                <Box mt={1}>
+                  <Typography variant="caption" component="p">
+                    Ao entrar você estará concordando com os{" "}
+                    <b>termos de uso</b>.
+                  </Typography>
+                </Box>
+              </CardContent>
+            </Card>
+            <Footer />
+          </Container>
+        </Box>
       </section>
-      <Footer />
     </>
   );
 };
