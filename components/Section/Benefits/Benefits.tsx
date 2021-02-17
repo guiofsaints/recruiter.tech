@@ -3,6 +3,7 @@ import {
   Card,
   CardContent,
   Container,
+  Hidden,
   Link,
   List,
   ListItem,
@@ -83,22 +84,21 @@ const Benefits = (): JSX.Element => {
   return (
     <section>
       <Container maxWidth="md">
-        <List
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            padding: 0,
-            overflow: "auto",
-            marginTop: 10,
-            alignItems: "center"
-          }}
-        >
-          {BenefitsData.map((item) => (
-            <ListItem key={item.key} disableGutters>
-              <BenefitsCard {...item} />
-            </ListItem>
-          ))}
-        </List>
+        <div className={classes.scroll}>
+          <Hidden mdUp>
+            <div className={classes.border} />
+          </Hidden>
+          <List className={classes.list}>
+            {BenefitsData.map((item) => (
+              <ListItem key={item.key} disableGutters>
+                <BenefitsCard {...item} />
+              </ListItem>
+            ))}
+          </List>
+          <Hidden mdUp>
+            <div className={classes.borderRight} />
+          </Hidden>
+        </div>
         <div className={classes.journey}>
           <Box mt={4}>
             <Typography variant="h6" component="h2">
