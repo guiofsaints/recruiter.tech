@@ -9,7 +9,6 @@ export default NextAuth({
       clientSecret: process.env.LINKEDIN_CLIENT_SECRET,
       scope: ["r_emailaddress", "r_liteprofile"]
     }),
-
     Providers.Google({
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET

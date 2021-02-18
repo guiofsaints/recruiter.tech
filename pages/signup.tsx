@@ -88,7 +88,7 @@ const SignUp = (): JSX.Element => {
                       <b>Meu Perfil</b>
                     </Typography>
                     <Box display="flex" mt={4} mb={4} justifyContent="center">
-                      <Avatar style={{ width: 100, height: 100 }}>
+                      <Avatar style={{ width: 120, height: 120 }}>
                         <VpnKey style={{ fontSize: 70 }} />
                       </Avatar>
                     </Box>
