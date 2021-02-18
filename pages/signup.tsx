@@ -1,5 +1,7 @@
 import React from "react";
 
+import { signIn, signOut, useSession } from "next-auth/client";
+
 import {
   Avatar,
   Box,
@@ -9,17 +11,17 @@ import {
   Container,
   createStyles,
   makeStyles,
-  Theme,
   Typography
 } from "@material-ui/core";
 import { blue, pink } from "@material-ui/core/colors";
 import LinkedinIcon from "@material-ui/icons/LinkedIn";
 
 import { VpnKey } from "@material-ui/icons";
+import RoundedButton from "components/Form/RoundedButton";
 import GoogleIcon from "../components/Icons/GoogleIcon";
 import Footer from "../components/Section/Footer";
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles(() =>
   createStyles({
     root: {
       flexGrow: 1,
@@ -52,6 +54,8 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const SignUp = (): JSX.Element => {
   const classes = useStyles();
+  const [session, loading] = useSession();
+
   return (
     <>
       {/* Register Component */}
@@ -72,34 +76,67 @@ const SignUp = (): JSX.Element => {
             </Box>
             <Card style={{ minHeight: 140, textAlign: "center" }}>
               <CardContent>
-                <Typography variant="h4" component="h1">
-                  <b>Meu Perfil</b>
-                </Typography>
-                <Box display="flex" mt={4} mb={4} justifyContent="center">
-                  <Avatar style={{ width: 100, height: 100 }}>
-                    <VpnKey style={{ fontSize: 70 }} />
-                  </Avatar>
-                </Box>
-                <Typography variant="body2" component="p">
-                  Utilize uma de suas redes para criar um perfil ou se conectar.
-                </Typography>
-                <Button className={classes.button}>
-                  <GoogleIcon style={{ fontSize: 16, marginRight: 10 }} />
-                  Google
-                </Button>
-                <Button
-                  className={classes.button}
-                  style={{ backgroundColor: blue[500], borderColor: blue[700] }}
-                >
-                  <LinkedinIcon style={{ fontSize: 16, marginRight: 10 }} />
-                  Linkedin
-                </Button>
-                <Box mt={1}>
-                  <Typography variant="caption" component="p">
-                    Ao entrar você estará concordando com os{" "}
-                    <b>termos de uso</b>.
-                  </Typography>
-                </Box>
+                {!session && (
+                  <>
+                    <Typography variant="h4" component="h1">
+                      <b>Meu Perfil</b>
+                    </Typography>
+                    <Box display="flex" mt={4} mb={4} justifyContent="center">
+                      <Avatar style={{ width: 100, height: 100 }}>
+                        <VpnKey style={{ fontSize: 70 }} />
+                      </Avatar>
+                    </Box>
+                    <Typography variant="body2" component="p">
+                      Utilize uma de suas redes para criar um perfil ou se
+                      conectar.
+                    </Typography>
+                    <Button
+                      onClick={() => signIn("google")}
+                      className={classes.button}
+                    >
+                      <GoogleIcon style={{ fontSize: 16, marginRight: 10 }} />
+                      Google
+                    </Button>
+                    <Button
+                      onClick={() => signIn("linkedin")}
+                      className={classes.button}
+                      style={{
+                        backgroundColor: blue[500],
+                        borderColor: blue[700]
+                      }}
+                    >
+                      <LinkedinIcon style={{ fontSize: 16, marginRight: 10 }} />
+                      Linkedin
+                    </Button>
+                    <Box mt={1}>
+                      <Typography variant="caption" component="p">
+                        Ao entrar você estará concordando com os{" "}
+                        <b>termos de uso</b>.
+                      </Typography>
+                    </Box>
+                  </>
+                )}
+                {session && (
+                  <>
+                    <Box display="flex" mt={4} mb={4} justifyContent="center">
+                      {session.user.image && (
+                        <Avatar
+                          src={session.user.image}
+                          style={{ width: 100, height: 100 }}
+                        />
+                      )}
+                    </Box>
+                    <Typography variant="caption" component="p">
+                      {session.user.name}
+                    </Typography>
+                    <Typography variant="caption" component="p">
+                      {session.user.email}
+                    </Typography>
+                    <RoundedButton onClick={() => signOut()}>
+                      Sair
+                    </RoundedButton>
+                  </>
+                )}
               </CardContent>
             </Card>
             <Footer />
