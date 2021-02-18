@@ -1,4 +1,7 @@
 import React from "react";
+
+import { Provider } from "next-auth/client";
+
 // Modules
 import { AppProps } from "next/app";
 import Head from "next/head";
@@ -39,10 +42,12 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <title>Recruiter - Mais diversidade no mundo da Tecnologia.</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <Provider session={pageProps.session}>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </Provider>
     </>
   );
 };
