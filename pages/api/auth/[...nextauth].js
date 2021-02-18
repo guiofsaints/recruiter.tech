@@ -11,7 +11,8 @@ export default NextAuth({
 
     Providers.Google({
       clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      scope: ["r_emailaddress", "r_liteprofile"]
     })
     // ...add more providers here
   ],
