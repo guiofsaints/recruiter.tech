@@ -56,6 +56,12 @@ const SignUp = (): JSX.Element => {
   const classes = useStyles();
   const [session, loading] = useSession();
 
+  console.log(session);
+
+  if (session && session.user) {
+    console.log(session.user);
+  }
+
   return (
     <>
       {/* Register Component */}
