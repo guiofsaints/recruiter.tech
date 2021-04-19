@@ -11,9 +11,6 @@
 #
 name: "CodeQL"
 
-paths:
-  - src 
-
 paths-ignore: 
   - public
   - .next
