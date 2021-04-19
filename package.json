@@ -17,7 +17,7 @@
     "release:major": "standard-version --release-as major",
     "publish": "git push --follow-tags origin main",
     "commit": "cz",
-    "lint": "eslint .",
+    "lint": "eslint --ext js,jsx --quiet",
     "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
