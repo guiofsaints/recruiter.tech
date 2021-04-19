@@ -4,7 +4,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 // MUI Core
 import { ServerStyleSheets } from "@material-ui/core/styles";
 // Utils
-import theme from "../utils/theme";
+import theme from "../themes/dark.style";
 
 class MyDocument extends Document {
   render(): JSX.Element {
@@ -36,6 +36,15 @@ class MyDocument extends Document {
           <link rel="apple-touch-icon" href="/favicon.png" />
           <meta name="msapplication-starturl" content="/" />
           <link rel="canonical" href="http://recruiter.tech/" />
+
+          <meta
+            httpEquiv="Referrer-Policy"
+            content="no-referrer, strict-origin-when-cross-origin"
+          />
+          <meta
+            content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff"
+            httpEquiv="Content-Type"
+          />
         </Head>
         <body>
           <Main />

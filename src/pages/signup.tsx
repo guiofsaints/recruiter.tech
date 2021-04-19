@@ -17,7 +17,7 @@ import { blue, pink } from "@material-ui/core/colors";
 import LinkedinIcon from "@material-ui/icons/LinkedIn";
 
 import { VpnKey } from "@material-ui/icons";
-import RoundedButton from "components/Form/RoundedButton";
+import RoundedButton from "../components/Form/RoundedButton";
 import GoogleIcon from "../components/Icons/GoogleIcon";
 import Footer from "../components/Section/Footer";
 

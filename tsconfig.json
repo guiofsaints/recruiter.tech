@@ -28,7 +28,7 @@
       "@typeDefs/*": ["./src/types/*"],
       "@generated/*": ["./src/generated/*"],
       "@public/*": ["./public/*"],
-      "@utils/*": ["./src/utils/*"],
+      "@utils/*": ["src/themes/*"],
       "@app/*": ["./src/app/*"],
       "@assets/*": ["./src/assets/*"]
     }

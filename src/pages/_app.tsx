@@ -1,17 +1,17 @@
 import React from "react";
 
-import { Provider } from "next-auth/client";
+import { Helmet } from "react-helmet";
 
 // Modules
 import { AppProps } from "next/app";
-import Head from "next/head";
+
 // MUI Core
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { ThemeProvider } from "@material-ui/core/styles";
 // Utils
-import theme from "../utils/theme";
+import theme from "../themes/dark.style";
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   React.useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector("#jss-server-side");
@@ -38,18 +38,26 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <>
-      <Head>
-        <title>Recruiter - Mais diversidade no mundo da Tecnologia.</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-      <Provider session={pageProps.session}>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </Provider>
+      <Helmet
+        htmlAttributes={{ lang: "pt-BR" }}
+        title="Recruiter - Mais diversidade no mundo da Tecnologia."
+        meta={[
+          {
+            name: "viewport",
+            content: "width=device-width, initial-scale=1"
+          },
+          {
+            property: "og:title",
+            content: "Recruiter - Mais diversidade no mundo da Tecnologia."
+          }
+        ]}
+      />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 };
 
-export default MyApp;
+export default App;
