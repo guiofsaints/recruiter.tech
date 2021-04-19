@@ -35,7 +35,7 @@ class MyDocument extends Document {
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <link rel="apple-touch-icon" href="/favicon.png" />
           <meta name="msapplication-starturl" content="/" />
-          <link rel="canonical" href="http://recruiter.tech/" />
+          <link rel="canonical" href="https://recruiter.tech/" />
 
           <meta
             httpEquiv="Referrer-Policy"
