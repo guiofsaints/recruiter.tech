@@ -11,13 +11,6 @@
 #
 name: "CodeQL"
 
-paths-ignore: 
-  - public
-  - .next
-  - .vscode
-  - node_modules
-  - '**/*.test.js'
-
 on:
   push:
     branches: [ main ]
