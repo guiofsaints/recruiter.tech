@@ -1,17 +1,43 @@
+// 20210418225028
+// https://raw.githubusercontent.com/guidroid/savedmoney.app/main/.all-contributorsrc
+
 {
-  "files": ["README.md"],
-  "imageSize": 100,
-  "contributorsPerLine": 7,
-  "contributorsSortAlphabetically": false,
-  "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square)](#contributors)",
+  "projectName": "recruiter.tech",
+  "projectOwner": "guidroid",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-brightgreen.svg?style=flat-square)](#contributors)",
   "contributorTemplate": "<a href=\"<%= contributor.profile %>\"><img src=\"<%= contributor.avatar_url %>\" width=\"<%= options.imageSize %>px;\" alt=\"\"/><br /><sub><b><%= contributor.name %></b></sub></a>",
-  "types": {
-    "custom": {
-      "symbol": "🔭",
-      "description": "A custom contribution type.",
-      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "eslint",
+  "contributors": [
+    {
+      "login": "guidroid",
+      "name": "Guilherme Santos",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10600408?v=4",
+      "profile": "http://www.tytow.com/",
+      "contributions": [
+        "question",
+        "code",
+        "content",
+        "design",
+        "doc",
+        "example",
+        "ideas",
+        "infra",
+        "maintenance",
+        "projectManagement",
+        "security",
+        "talk",
+        "test",
+        "tool",
+        "translation"
+      ]
     }
-  },
-  "skipCi": "true",
-  "contributors": []
+  ],
+  "contributorsPerLine": 7
 }
