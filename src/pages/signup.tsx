@@ -20,6 +20,7 @@ import { VpnKey } from "@material-ui/icons";
 import RoundedButton from "../components/Form/RoundedButton";
 import GoogleIcon from "../components/Icons/GoogleIcon";
 import Footer from "../components/Section/Footer";
+import Loading from "@components/Loading";
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -82,6 +83,8 @@ const SignUp = (): JSX.Element => {
             </Box>
             <Card style={{ minHeight: 140, textAlign: "center" }}>
               <CardContent>
+                <Loading showLoading={loading} />
+
                 {!session && (
                   <>
                     <Typography variant="h4" component="h1">
